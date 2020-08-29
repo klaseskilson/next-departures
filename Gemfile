@@ -55,8 +55,12 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
-gem 'dotenv', '~> 2.7'
+group :development, :test do
+  gem 'dotenv-rails', '~> 2.7'
+  gem 'rspec-rails', '~> 4.0.1'
+  gem 'rubocop', '~> 0.89.1'
+end
 
-gem 'dotenv-rails', '~> 2.7', groups: %i[development test]
+gem 'httparty', '~> 0.18.1'
 
-gem 'rubocop', '~> 0.89.1', groups: %i[development test]
+gem "webmock", "~> 3.8", :group => :test
