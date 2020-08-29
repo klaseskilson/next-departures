@@ -9,5 +9,7 @@ AllCops:
     - 'node_modules/**/*'
   TargetRubyVersion: 2.7
 
+Naming/MemoizedInstanceVariableName:
+  EnforcedStyleForLeadingUnderscores: required
 Style/Documentation:
   Enabled: false
