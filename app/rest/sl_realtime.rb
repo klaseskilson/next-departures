@@ -12,6 +12,6 @@ class SlRealtime
   def self.departures(station_id:)
     response = get('/realtimedeparturesV4.json', query: { SiteId: station_id })
 
-    response['ResponseData'].symbolize_keys if response['StatusCode'].zero?
+    response['ResponseData'].deep_symbolize_keys if response['StatusCode'].zero?
   end
 end
