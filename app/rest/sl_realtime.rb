@@ -10,7 +10,8 @@ class SlRealtime
 
   # get departures for a given station id
   def self.departures(station_id:)
-    # error management? none!
-    get('/realtimedeparturesV4.json', query: { SiteId: station_id })['ResponseData'].symbolize_keys
+    response = get('/realtimedeparturesV4.json', query: { SiteId: station_id })
+
+    response['ResponseData'].symbolize_keys if response['StatusCode'].zero?
   end
 end
