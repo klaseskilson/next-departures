@@ -1,4 +1,10 @@
 station!
 
-<%= debug @station_info %>
-<%= debug @departures %>
+<% @departures.each do |departure| %>
+  <p>
+    <%= departure.transport_mode %> <strong><%= departure.line_number %></strong>
+    <%= departure.group_of_line ? "(#{departure.group_of_line})" : '' %>
+    towards <%= departure.destination %> departs in
+    <%= time_ago_in_words(departure.expected_date_time) %>
+  </p>
+<% end %>

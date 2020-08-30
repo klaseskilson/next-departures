@@ -14,5 +14,9 @@ class Departure
   attr_reader :destination, :deviations, :display_time, :expected_date_time,
               :group_of_line, :journey_direction, :journey_number, :line_number,
               :stop_area_name, :stop_area_number, :stop_point_designation,
-              :stop_point_number, :time_tabled_date_time, :transport_mode
+              :stop_point_number, :time_tabled_date_time
+
+  def transport_mode
+    @transport_mode.downcase
+  end
 end
