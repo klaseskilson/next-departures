@@ -1,5 +1,6 @@
 <% unless @results&.any? %>
-  Nothing found!
+  <p>Nothing found! Search again!</p>
+  <%= render 'form' %>
 <% end %>
 
 <ul>
