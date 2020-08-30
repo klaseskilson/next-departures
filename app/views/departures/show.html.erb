@@ -3,8 +3,9 @@
     <p>
       <%= departure.transport_mode %> <strong><%= departure.line_number %></strong>
       <%= departure.group_of_line ? "(#{departure.group_of_line})" : '' %>
-      towards <%= departure.destination %> departs in
-      <%= time_ago_in_words(departure.expected_date_time) %>
+      from <%= departure.stop_area_name %><br />
+      towards <strong><%= departure.destination %></strong>
+      departs in <%= time_ago_in_words(departure.expected_date_time) %>
     </p>
   <% end %>
 <% else %>
