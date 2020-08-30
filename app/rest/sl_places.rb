@@ -11,9 +11,10 @@ class SlPlaces
 
   # search for stations given a search string
   def self.search(search_string:)
+    Rails.logger.info("Searching for #{search_string}")
     response = get('/typeahead.json', query: { SearchString: search_string })
 
-    return unless response['StatusCode'].zero?
+    return [] unless response['StatusCode'].zero?
 
     response['ResponseData'].map { |stop| stop.transform_keys(&:underscore).symbolize_keys }
   end
