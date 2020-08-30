@@ -1,0 +1,87 @@
+{
+	"StatusCode": 0,
+	"Message": null,
+	"ExecutionTime": 0,
+	"ResponseData": [
+		{
+			"Name": "Hammarbyhöjden (Stockholm)",
+			"SiteId": "9144",
+			"Type": "Station",
+			"X": "18107026",
+			"Y": "59294709",
+			"Products": null
+		},
+		{
+			"Name": "Hammarbyhöjdens servicehus (Stockholm)",
+			"SiteId": "9773",
+			"Type": "Station",
+			"X": "18102387",
+			"Y": "59294215",
+			"Products": null
+		},
+		{
+			"Name": "Hammarbyhallen (Stockholm)",
+			"SiteId": "1568",
+			"Type": "Station",
+			"X": "18095888",
+			"Y": "59290529",
+			"Products": null
+		},
+		{
+			"Name": "Hammarby apotek (Upplands Väsby)",
+			"SiteId": "5305",
+			"Type": "Station",
+			"X": "17924859",
+			"Y": "59529454",
+			"Products": null
+		},
+		{
+			"Name": "Hammarby kyrka (Upplands Väsby)",
+			"SiteId": "5304",
+			"Type": "Station",
+			"X": "17921722",
+			"Y": "59535755",
+			"Products": null
+		},
+		{
+			"Name": "Hammarbyvägen (Upplands Väsby)",
+			"SiteId": "5327",
+			"Type": "Station",
+			"X": "17920140",
+			"Y": "59528366",
+			"Products": null
+		},
+		{
+			"Name": "Hammarby (Norrtälje)",
+			"SiteId": "6901",
+			"Type": "Station",
+			"X": "18815555",
+			"Y": "59973593",
+			"Products": null
+		},
+		{
+			"Name": "Hammarby mellersta (Norrtälje)",
+			"SiteId": "6301",
+			"Type": "Station",
+			"X": "18669427",
+			"Y": "59662737",
+			"Products": null
+		},
+		{
+			"Name": "Hammarby norra (Penningby)  (Norrtälje)",
+			"SiteId": "6302",
+			"Type": "Station",
+			"X": "18672330",
+			"Y": "59665937",
+			"Products": null
+		},
+		{
+			"Name": "Hammarby södra (Norrtälje)",
+			"SiteId": "6300",
+			"Type": "Station",
+			"X": "18670919",
+			"Y": "59658781",
+			"Products": null
+		}
+	]
+}
