@@ -13,6 +13,8 @@ class SlPlaces
   def self.search(search_string:)
     response = get('/typeahead.json', query: { SearchString: search_string })
 
-    response['ResponseData'].map(&:deep_symbolize_keys) if response['StatusCode'].zero?
+    return unless response['StatusCode'].zero?
+
+    response['ResponseData'].map { |stop| stop.transform_keys(&:underscore).symbolize_keys }
   end
 end
