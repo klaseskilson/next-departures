@@ -1,0 +1,9 @@
+<% unless @results&.any? %>
+  Nothing found!
+<% end %>
+
+<ul>
+  <% @results&.each do |station| %>
+    <li><%= link_to station[:name], show_departures_path(station[:site_id]) %></li>
+  <% end %>
+</ul>

@@ -1,0 +1,5 @@
+<%= form_with url: show_search_url, method: :get, local: true do |form| %>
+  <%= form.label :search, 'Search station name' %>
+  <%= form.text_field :station, placeholder: 'enter station name...' %>
+  <%= form.submit 'Search' %>
+<% end %>
