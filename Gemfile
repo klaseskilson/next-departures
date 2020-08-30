@@ -63,4 +63,4 @@ end
 
 gem 'httparty', '~> 0.18.1'
 
-gem "webmock", "~> 3.8", :group => :test
+gem 'webmock', '~> 3.8', group: :test
