@@ -3,7 +3,7 @@
 require 'rails_helper'
 
 RSpec.describe Departure do
-  subject { described_class.new(input) }
+  subject { described_class.new(**input) }
 
   describe '.new' do
     let(:input) do
