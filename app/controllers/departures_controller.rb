@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class DeparturesController < ApplicationController
+  rescue_from 'StationInfo::NoDeparturesError', with: :redirect_to_not_found
+
   def show
     @departures = sl_data.departures
   end
