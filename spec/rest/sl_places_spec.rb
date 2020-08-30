@@ -14,7 +14,7 @@ RSpec.describe SlPlaces do
                    body: File.open(Rails.root.join(*response[:fixture])))
     end
 
-    context 'when using a non-existing station id' do
+    context 'when searching for a station' do
       let(:search_string) { 'Hammarbyhöjden' }
       let(:response) { { status: 200, fixture: %w[spec support fixtures places_hammarbyhojden.json] } }
 
